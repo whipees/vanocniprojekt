@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/0b666d858a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>SEBWHIFY</title>
+  </head>
+  <body>
+
+   <!--Music playing app made in js, html, css. By Sebastian Janíček -->
+      <!--darkmode switch-->
+    <div class="buttonek">
+      <button id="darkmode" class="darkmode"><i class="fa-solid fa-sun"></i></button>
+    </div>
+
+
+  <div class="program">
+
+    <!--here are the html tags for the song img and audio source-->
+    <div class="player-div" id="player">
+      <h1 class="title">SEBWHIFY</h1>
+
+
+      <audio src="music/ruby.mp3" id="music"></audio>
+
+      <div class="image">
+        <img src="image/ruby.jpg" id="image" />
+      </div>
+      <div class="info">
+        <h2 id="songName"></h2>
+
+      </div>
+      <!--here are the control buttons-->
+      <div class="buttons">
+
+        <button id="showPlaylist" class="control">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button id="prev" class="control">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="control control-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="control">
+          <i class="fas fa-forward"></i>
+        </button>
+        <button id="repeat" class="control">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+
+      </div>
+
+      <!--here is the playlist sidebar which appears onclick-->
+  
+    </div>
+      <div class="playlist" id="list"> 
+        <div class="nowPlaying">
+             <h4>Now playing: <h4 id="nowPlaying"></h4></h4> 
+        </div>
+        <div class="list">
+              <h4>Playlist: </h4>
+          <ul>
+            
+            <li>Kitchen Sink</li>
+            <li>Ruby</li>
+            <li>On Sight</li>
+          </ul>
+        </div>
+    
+        </div>
+  </div>
+
+  
+
+    <script src="main.js"></script>
+  </body>
+</html>

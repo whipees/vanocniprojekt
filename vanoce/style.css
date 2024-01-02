@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* background color and setup */
+
+body{
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*styling the darkmode button */
+
+.darkmode{
+    font-size: 20px;
+    background: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+/*styles for the player */
+
+.player-div{
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgb(9, 9, 9);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-top: 50px;
+    z-index: 10;
+    padding-bottom: 30px;
+}
+
+
+.image{
+    height: 425px;
+}
+
+.image img{
+    height: inherit;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.buttons{
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 15px;
+}
+
+/*control buttons style */
+.control{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #b3b3b3;
+    font-size: 30px;
+}
+
+.control-big{
+    color: #212427;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+/*whole app style */
+
+.program{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* sidebar playlist */
+
+.playlist{
+    box-shadow: 0 20px 20px 0 rgb(9, 9, 9);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    padding-top: 30px;
+    border-radius: 15px;
+    display: none;
+    
+}
+
+.playlist ul{
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.nowPlaying{
+    font-size: 1.5rem;
+}
+
+.list h4{
+    font-size: 1.125rem;
+}
+
+
+
+
+
+
+
